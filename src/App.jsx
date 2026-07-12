@@ -76,7 +76,7 @@
 import UseState from "./States";
 function App(){
   return(
-    <State/>
+    <UseState/>
   )
 }
 export default App
