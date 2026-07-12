@@ -59,10 +59,17 @@
 // }
 // export default App
 
-import Intro from "./JsxCurly"
+// import Intro from "./JsxCurly"
+// function App(){
+//   return(
+//     <Intro/>
+//   )
+// }
+// export default App
+import Event from "./Event&FunctionCall.jsx"
 function App(){
   return(
-    <Intro/>
+    <Event/>
   )
 }
 export default App
