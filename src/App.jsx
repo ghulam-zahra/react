@@ -73,10 +73,17 @@
 //   )
 // }
 // export default App
-import UseState from "./States";
+// import UseState from "./States";
+// function App(){
+//   return(
+//     <UseState/>
+//   )
+// }
+// export default App
+import Toggles from "./Toggle";
 function App(){
-  return(
-    <UseState/>
-  )
+  <>
+  <Toggles/>
+  </>
 }
 export default App
