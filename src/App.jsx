@@ -66,10 +66,17 @@
 //   )
 // }
 // export default App
-import Event from "./Event&FunctionCall.jsx"
+// import Event from "./Event&FunctionCall.jsx"
+// function App(){
+//   return(
+//     <Event/>
+//   )
+// }
+// export default App
+import UseState from "./States";
 function App(){
   return(
-    <Event/>
+    <State/>
   )
 }
 export default App
