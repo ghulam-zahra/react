@@ -102,31 +102,51 @@
 // }
 // export default App
 
-import Propss from "./PropsReact";
+// import Propss from "./PropsReact";
 
-function App() {
+// function App() {
  
-  let user = {
-    name:"Zee Shan",
-    age:"28",
-    email:"xeexial@gmail.com"
-  }
+//   let user = {
+//     name:"Zee Shan",
+//     age:"28",
+//     email:"xeexial@gmail.com"
+//   }
 
-  let user2 = {
-    name:"Shanu",
-    age:"20",
-    email:"xial@gmail.com"
-  }
-   let cities = ["Fsd","Layyah","Multan","Karachi"]
-   
-  return (
-    <div>
-      {/* <Propss name="Anil" age={29} /> */}
-      <Propss user = {user} city ={cities[0]}/>
-      <Propss user = {user2} city ={cities[1]}/>
+//   let user2 = {
+//     name:"Shanu",
+//     age:"20",
+//     email:"xial@gmail.com"
+//   }
+//    let cities = ["Fsd","Layyah","Multan","Karachi"]
+
+//   return (
+//     <div>
+//       {/* <Propss name="Anil" age={29} /> */}
+//       <Propss user = {user} city ={cities[0]}/>
+//       <Propss user = {user2} city ={cities[1]}/>
        
-    </div>
-  );
-}
+//     </div>
+//   );
+// }
 
-export default App;
+// export default App;
+
+import Wrapper from "./Wrapper.jsx"
+function App(){
+  return(
+    <div>
+      <Wrapper color="orange">
+        <h2>Hi Can you listen </h2>
+      </Wrapper>
+
+      <Wrapper >
+        <h2>Oh! you can't </h2>
+      </Wrapper>
+
+      <Wrapper >
+        <h2 style ={{color:"brown"}}>But why </h2>
+      </Wrapper>
+    </div>
+  )
+}
+export default App
