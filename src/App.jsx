@@ -7,6 +7,9 @@
 //       Hello React
 //     </h1>
 //     </div>
+
+// import { useState } from "react"
+
    
 //   )
 // }
@@ -131,22 +134,37 @@
 
 // export default App;
 
-import Wrapper from "./Wrapper.jsx"
+// import Wrapper from "./Wrapper.jsx"
+// function App(){
+//   return(
+//     <div>
+//       <Wrapper color="orange">
+//         <h2>Hi Can you listen </h2>
+//       </Wrapper>
+
+//       <Wrapper >
+//         <h2>Oh! you can't </h2>
+//       </Wrapper>
+
+//       <Wrapper >
+//         <h2 style ={{color:"brown"}}>But why </h2>
+//       </Wrapper>
+//     </div>
+//   )
+// }
+// export default App
+
+import { useState } from "react"
 function App(){
+  const[val,setVal]=useState("")
   return(
     <div>
-      <Wrapper color="orange">
-        <h2>Hi Can you listen </h2>
-      </Wrapper>
-
-      <Wrapper >
-        <h2>Oh! you can't </h2>
-      </Wrapper>
-
-      <Wrapper >
-        <h2 style ={{color:"brown"}}>But why </h2>
-      </Wrapper>
+      <h1>Get input field value</h1>
+      <input type="text" value={val} onChange={(event)=>{setVal(event.target.value)}} placeholder="Enter value"/>
+      <br />
+      <h1>{val}</h1>
+      <button onClick={()=>{setVal("")}}>Clear val</button>
     </div>
   )
 }
-export default App
+export default App;
