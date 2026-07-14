@@ -91,13 +91,42 @@
 // }
 // export default App
 
-import Condition from "./Contidional";
-function App(){
-  return(
-  <>
-  <Condition/>
-  </>
-  )
+// import Condition from "./Contidional";
+// function App(){
+//   return(
+//   <>
+//   <Condition/>
+//   </>
+//   )
   
+// }
+// export default App
+
+import Propss from "./PropsReact";
+
+function App() {
+ 
+  let user = {
+    name:"Zee Shan",
+    age:"28",
+    email:"xeexial@gmail.com"
+  }
+
+  let user2 = {
+    name:"Shanu",
+    age:"20",
+    email:"xial@gmail.com"
+  }
+   let cities = ["Fsd","Layyah","Multan","Karachi"]
+   
+  return (
+    <div>
+      {/* <Propss name="Anil" age={29} /> */}
+      <Propss user = {user} city ={cities[0]}/>
+      <Propss user = {user2} city ={cities[1]}/>
+       
+    </div>
+  );
 }
-export default App
+
+export default App;
