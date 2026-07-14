@@ -80,11 +80,22 @@
 //   )
 // }
 // export default App
-import Toggles from "./Toggle";
+// import Toggles from "./Toggle";
+// function App(){
+//   return(
+//   <>
+//   <Toggles/>
+//   </>
+//   )
+  
+// }
+// export default App
+
+import Condition from "./Contidional";
 function App(){
   return(
   <>
-  <Toggles/>
+  <Condition/>
   </>
   )
   
