@@ -82,8 +82,11 @@
 // export default App
 import Toggles from "./Toggle";
 function App(){
+  return(
   <>
   <Toggles/>
   </>
+  )
+  
 }
 export default App
