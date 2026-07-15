@@ -154,17 +154,28 @@
 // }
 // export default App
 
-import { useState } from "react"
+// import { useState } from "react"
+// function App(){
+//   const[val,setVal]=useState("")
+//   return(
+//     <div>
+//       <h1>Get input field value</h1>
+//       <input type="text" value={val} onChange={(event)=>{setVal(event.target.value)}} placeholder="Enter value"/>
+//       <br />
+//       <h1>{val}</h1>
+//       <button onClick={()=>{setVal("")}}>Clear val</button>
+//     </div>
+//   )
+// }
+// export default App;
+
+import { useState } from "react";
+import ControlledComp from "./ControlledComp";
 function App(){
-  const[val,setVal]=useState("")
   return(
     <div>
-      <h1>Get input field value</h1>
-      <input type="text" value={val} onChange={(event)=>{setVal(event.target.value)}} placeholder="Enter value"/>
-      <br />
-      <h1>{val}</h1>
-      <button onClick={()=>{setVal("")}}>Clear val</button>
+      <ControlledComp/>
     </div>
   )
 }
-export default App;
+export default App
