@@ -169,12 +169,22 @@
 // }
 // export default App;
 
+// import { useState } from "react";
+// import ControlledComp from "./ControlledComp";
+// function App(){
+//   return(
+//     <div>
+//       <ControlledComp/>
+//     </div>
+//   )
+// }
+// export default App
 import { useState } from "react";
-import ControlledComp from "./ControlledComp";
+import CheckboxHandle from "./CheckboxHandle";
 function App(){
   return(
     <div>
-      <ControlledComp/>
+      <CheckboxHandle/>
     </div>
   )
 }
