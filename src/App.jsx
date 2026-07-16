@@ -201,11 +201,30 @@
 // }
 // export default App
 
-import Loop from "./Loop";
+// import Loop from "./Loop";
+// function App(){
+//   return(
+//     <div>
+//       <Loop/>
+//       <ReuseComp/>
+//     </div>
+//   )
+// }
+// export default App
+
+import { useState } from "react";
+import Clock from "./Clock";
 function App(){
+  const[color,setColor]=useState("orange")
   return(
     <div>
-      <Loop/>
+      <select onChange={(event) =>setColor(event.target.value)}>
+        <option value={"orange"}>Orange</option>
+        <option value={"green"}>Green</option>
+        <option value={"black"}>Black</option>
+        <option value={"blue"}>Blue</option>
+      </select>
+      <Clock color={color} />
     </div>
   )
 }
