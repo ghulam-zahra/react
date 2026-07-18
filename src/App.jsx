@@ -230,14 +230,23 @@
 // }
 // export default App
 
-import { useState } from "react";
-import Counter from "./Counter";
+// import { useState } from "react";
+// import Counter from "./Counter";
+// function App(){
+//   const[counter,setCounter]=useState(0)
+//   return(
+//     <div>
+//       <Counter counter={counter} />
+//       <button onClick={()=>setCounter(counter+1)}>Counter</button>
+//     </div>
+//   )
+// }
+// export default App
+import StyleComp from "./StyleComp";
 function App(){
-  const[counter,setCounter]=useState(0)
   return(
     <div>
-      <Counter counter={counter} />
-      <button onClick={()=>setCounter(counter+1)}>Counter</button>
+      <StyleComp/>
     </div>
   )
 }
