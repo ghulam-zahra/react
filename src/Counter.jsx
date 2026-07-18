@@ -8,6 +8,9 @@ function Counter({counter}){
         handleCounter()
     },[])
     
+    useEffect(()=>{
+        console.log("mount phase only")
+    },[])
     return(
         <div>
             <h1>Handle props side effects with useEffect in component</h1>
