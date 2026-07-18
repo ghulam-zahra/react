@@ -212,19 +212,32 @@
 // }
 // export default App
 
+// import { useState } from "react";
+// import Clock from "./Clock";
+// function App(){
+//   const[color,setColor]=useState("orange")
+//   return(
+//     <div>
+//       <select onChange={(event) =>setColor(event.target.value)}>
+//         <option value={"orange"}>Orange</option>
+//         <option value={"green"}>Green</option>
+//         <option value={"black"}>Black</option>
+//         <option value={"blue"}>Blue</option>
+//       </select>
+//       <Clock color={color} />
+//     </div>
+//   )
+// }
+// export default App
+
 import { useState } from "react";
-import Clock from "./Clock";
+import Counter from "./Counter";
 function App(){
-  const[color,setColor]=useState("orange")
+  const[counter,setCounter]=useState(0)
   return(
     <div>
-      <select onChange={(event) =>setColor(event.target.value)}>
-        <option value={"orange"}>Orange</option>
-        <option value={"green"}>Green</option>
-        <option value={"black"}>Black</option>
-        <option value={"blue"}>Blue</option>
-      </select>
-      <Clock color={color} />
+      <Counter counter={counter} />
+      <button onClick={()=>setCounter(counter+1)}>Counter</button>
     </div>
   )
 }
