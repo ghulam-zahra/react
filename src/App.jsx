@@ -252,11 +252,21 @@
 // }
 // export default App
 
-import Bootstrap from "./Bootstrap";
+// import Bootstrap from "./Bootstrap";
+// function App(){
+//   return(
+//     <div>
+//       <Bootstrap/>
+//     </div>
+//   )
+// }
+// export default App
+
+import UseRef from "./UseRef";
 function App(){
   return(
     <div>
-      <Bootstrap/>
+      <UseRef/>
     </div>
   )
 }
