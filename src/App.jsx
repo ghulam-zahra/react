@@ -262,12 +262,22 @@
 // }
 // export default App
 
-import UseRef from "./UseRef";
+// import UseRef from "./UseRef";
+// function App(){
+//   return(
+//     <div>
+//       <UseRef/>
+//     </div>
+//   )
+// }
+// export default App
+
+import UnconrolledComp from "./UncontrolledComp";
 function App(){
   return(
     <div>
-      <UseRef/>
+      <UnconrolledComp/>
     </div>
   )
 }
-export default App
+export default UnconrolledComp
