@@ -242,11 +242,21 @@
 //   )
 // }
 // export default App
-import StyleComp from "./StyleComp";
+// import StyleComp from "./StyleComp";
+// function App(){
+//   return(
+//     <div>
+//       <StyleComp/>
+//     </div>
+//   )
+// }
+// export default App
+
+import Bootstrap from "./Bootstrap";
 function App(){
   return(
     <div>
-      <StyleComp/>
+      <Bootstrap/>
     </div>
   )
 }
